@@ -1,0 +1,95 @@
+@import url(reset.css);
+html,body{
+	width: 100%;
+	max-width:100%;
+}
+button{
+	cursor: pointer;
+}
+.page-wrapper{
+	width: 100%;
+}
+.start-btn-cont{
+	width: 150px;
+	margin:auto;
+	margin-top: 100px;
+}
+.start-game-btn{
+	font-size: 48px;
+	padding: 10px;
+}
+.game-container{
+  width: 900px;
+  height: 400px;
+  border:1px solid black;
+  margin: auto;
+  position: relative;
+}
+.main-menu{
+  width: 200px;
+  height: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+.main-menu a{
+  text-decoration:none;
+  font-size: 36px;
+  display: block;
+  margin:auto;
+  
+}
+.main-menu ul li{
+  list-style:none;
+  display:inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+
+}
+.hero-cont{
+	width: 140px;
+	position: absolute;
+   	left: 70px;
+   	bottom: 0;
+    height: 220px;
+    background-image: url('../img/potential-img/guy-run2.jpg');
+    background-repeat: no-repeat;
+    background-position: -65px -25px;
+    -webkit-background-size: cover;
+    background-size: 400%;
+    -webkit-animation: herorun .75s steps(1) infinite;
+}
+@keyframes herorun {
+    from {
+	background-position: -65px -25px;
+    }
+    16%{
+		background-position: -195px -25px;
+    }
+    33%{
+		background-position: -330px -25px;
+    }
+    50% {
+		background-position:-60px -245px;
+    }
+    66%{
+		background-position:-195px -245px;
+    }
+    to {
+		background-position:-330px -245px;
+    }	
+}
+.jump{
+	-webkit-animation: jump .75s steps(1) infinite;
+}
+@keyframes jump{
+	from {
+		bottom: 0;
+	}
+	50%{
+		bottom:  100px;
+	}
+	to{
+		bottom: 0;
+	}
+}
