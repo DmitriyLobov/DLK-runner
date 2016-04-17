@@ -79,17 +79,3 @@ button{
 		background-position:-330px -245px;
     }	
 }
-.jump{
-	-webkit-animation: jump .75s steps(1) infinite;
-}
-@keyframes jump{
-	from {
-		bottom: 0;
-	}
-	50%{
-		bottom:  100px;
-	}
-	to{
-		bottom: 0;
-	}
-}
