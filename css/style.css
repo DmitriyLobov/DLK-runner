@@ -57,7 +57,7 @@ button{
     background-position: -65px -25px;
     -webkit-background-size: cover;
     background-size: 400%;
-    -webkit-animation: herorun .75s steps(1) infinite;
+    -webkit-animation: herorun .4s steps(1) infinite;
 }
 @keyframes herorun {
     from {
